@@ -76,6 +76,7 @@ defmodule FastHtml.Mixfile do
     # This is run every time mix is executed, so it will fail in the hex package,
     # therefore check if git is even available
     if File.exists?(".git") and System.find_executable("git") do
+      System.cmd("git", ["submodule", "update", "--init", "--recursive"])
       {files, 0} = System.cmd("git", ["ls-files", "--recurse-submodules"])
 
       files
