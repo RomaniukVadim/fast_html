@@ -54,12 +54,12 @@ defmodule FastHtml.Mixfile do
       # documentation helpers
       {:ex_doc, "~> 0.19", only: :dev},
       # benchmarking helpers
-      {:benchee, "~> 1.0", only: :bench, optional: true},
+      # {:benchee, "~> 1.0", only: :bench, optional: true},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:myhtmlex, "~> 0.2.0", only: :bench, runtime: false, optional: true},
-      {:mochiweb, "~> 2.18", only: :bench, optional: true},
-      {:html5ever,
-       git: "https://github.com/rusterlium/html5ever_elixir.git", only: :bench, optional: true},
+      # {:myhtmlex, "~> 0.2.0", only: :bench, runtime: false, optional: true},
+      # {:mochiweb, "~> 2.18", only: :bench, optional: true},
+      #{:html5ever,
+      # git: "https://github.com/rusterlium/html5ever_elixir.git", only: :bench, optional: true},
       {:nimble_pool, "~> 1.1"},
       {:elixir_make, "~> 0.4", runtime: false}
     ]
