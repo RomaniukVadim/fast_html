@@ -1,0 +1,12 @@
+{application, fast_html,
+ [{description, "Lexbor erlang port"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {fasthtml_app, []}},
+  {applications,
+   [kernel,
+    stdlib]},
+  {modules, [fasthtml_app, fasthtml_worker]},
+  {env,[]}
+ ]}.
+
